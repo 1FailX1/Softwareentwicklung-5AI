@@ -1,0 +1,79 @@
+/* Spotify-inspired styling */
+.song-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background like Spotify */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.song-list h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #ffffff; /* White text */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #181818; /* Slightly lighter dark background */
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.song-list li:hover {
+    background-color: #282828; /* Darker hover effect */
+    transform: scale(1.02);
+}
+
+.song-info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.song-list h2 {
+    margin: 0 0 5px;
+    font-size: 1.5em;
+    color: #ffffff; /* White text for song name */
+}
+
+.song-list p {
+    margin: 5px 0;
+    color: #b3b3b3; /* Gray text for details */
+    font-size: 1em;
+}
+
+.song-list p strong {
+    color: #1DB954; /* Spotify Green for emphasis */
+}
+
+.song-list p:first-of-type {
+    margin-top: 10px;
+}
+
+/* Add some animations for hover effects */
+.song-list li:hover h2 {
+    color: #1DB954; /* Change song name color on hover */
+}
+
+.song-list li:hover p {
+    color: #ffffff; /* Change details text color on hover */
+}
