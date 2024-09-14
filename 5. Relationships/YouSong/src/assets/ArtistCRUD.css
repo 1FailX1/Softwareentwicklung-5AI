@@ -1,0 +1,90 @@
+/* Container for the Add Artist form */
+.crud-artist {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.crud-artist h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #b3b3b3; /* Light gray for labels */
+}
+
+.spotify-input {
+    width: 100%;
+    max-width: 100%; /* Ensures the input doesn't exceed its container */
+    padding: 12px;
+    background-color: #282828; /* Dark input background */
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-indent: 10px;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.spotify-input:focus {
+    background-color: #1DB954; /* Spotify green on focus */
+    outline: none;
+    color: #121212;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Spotify button styles */
+.spotify-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Primary button (Save) */
+.btn-primary {
+    background-color: #1DB954;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
+/* Secondary button (Go Back) */
+.btn-secondary {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
