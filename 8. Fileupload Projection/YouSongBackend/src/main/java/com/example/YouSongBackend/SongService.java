@@ -60,4 +60,8 @@ public class SongService {
     public Page<SongProjection> searchSongsPaginated(String searchTerm, int page, int size) {
         return songRepository.findByNameContainingIgnoreCaseOrArtist_NameContainingIgnoreCase(searchTerm, searchTerm, PageRequest.of(page, size));
     }
+
+    public SongDataForStreamingProjection getSongDataForStreaming(int id) {
+        return songRepository.findProjectedById(id);
+    }
 }

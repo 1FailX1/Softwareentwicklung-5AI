@@ -77,4 +77,10 @@ public class SongController {
         Page<SongProjection> songsPage = songService.searchSongsPaginated(searchTerm, page, size);
         return ResponseEntity.ok(songsPage);
     }
+
+    @GetMapping("/streaming/{id}")
+    public ResponseEntity<SongDataForStreamingProjection> getSongDataForStreaming(@PathVariable int id) {
+        SongDataForStreamingProjection songData = songService.getSongDataForStreaming(id);
+        return songData != null ? ResponseEntity.ok(songData) : ResponseEntity.notFound().build();
+    }
 }

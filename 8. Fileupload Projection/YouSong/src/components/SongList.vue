@@ -113,7 +113,7 @@ export default {
     const playSong = async (song) => {
       try {
         // Fetch the song details
-        const response = await axios.get(`http://localhost:8080/api/songs/${song.id}`);
+        const response = await axios.get(`http://localhost:8080/api/songs/streaming/${song.id}`);
         currentSong.value = response.data;
 
         // Get the audio player element
