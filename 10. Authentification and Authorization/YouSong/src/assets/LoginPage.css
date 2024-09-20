@@ -1,0 +1,106 @@
+/* Full page styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background-color: #121212; /* Dark background for Spotify look */
+    font-family: 'Roboto', sans-serif; /* Spotify-like font */
+}
+
+/* Login box styling */
+.login-box {
+    background-color: #181818; /* Slightly lighter dark box for contrast */
+    padding: 40px;
+    border-radius: 30px; /* Rounded corners for the login box */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    border: 5px solid #1DB954; /* Bright Spotify green border */
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading styling */
+.login-box h2 {
+    color: #ffffff; /* White text */
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Form field styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #b3b3b3; /* Light gray for labels */
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    border-radius: 50px; /* Rounded input fields */
+    background-color: #282828; /* Dark input background */
+    color: #ffffff; /* White text inside inputs */
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #333333; /* Slightly lighter when focused */
+}
+
+/* Button styling */
+.spotify-login-button {
+    background-color: #181818;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-home-button {
+    background-color: #181818; /* Spotify green */
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-login-button:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+.spotify-home-button:hover {
+    background-color: red; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+.spotify-login-button:active {
+    color: white;
+    transform: scale(0.98); /* Click effect */
+}

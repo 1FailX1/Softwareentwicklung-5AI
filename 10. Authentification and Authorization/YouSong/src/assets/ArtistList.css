@@ -1,0 +1,118 @@
+.artist-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background-color: #121212; /* Dark background for Spotify look */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.artist-box {
+    background-color: #181818; /* Slightly lighter dark box for contrast */
+    padding: 40px;
+    border-radius: 30px; /* Rounded corners for the artist box */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    border: 5px solid #1DB954; /* Bright Spotify green border */
+    width: 700px; /* Adjust width as needed */
+    text-align: center;
+    color: #fff; /* White text for dark background */
+}
+
+.artist-box h1 {
+    color: #ffffff; /* White heading */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.artist-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.artist-box li {
+    border: 1px solid #333; /* Darker border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #282828; /* Slightly lighter background for list items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.artist-box li:hover {
+    transform: translateY(-5px); /* Move item up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Hover shadow effect */
+}
+
+.artist-box h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #1DB954; /* Spotify green for artist names */
+}
+
+.artist-box button {
+    background-color: #282828;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.artist-box button:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.artist-box p {
+    text-align: center;
+    color: #b3b3b3; /* Lighter gray for "No artists found" text */
+    font-size: 1.2em;
+}
+
+#add-artist-button {
+    background-color: #181818;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#go-back-button {
+    background-color: #181818;
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add-artist-button:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+#go-back-button:hover {
+    background-color: red; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover effect */
+}
