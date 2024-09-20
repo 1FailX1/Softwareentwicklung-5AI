@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Spotify-inspired form design */
+.crud-song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background like Spotify */
+}
+
+.crud-song-box{
+    background-color: #181818; /* Slightly lighter dark box for contrast */
+    padding: 40px;
+    border-radius: 30px; /* Rounded corners for the login box */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    border: 5px solid #1DB954; /* Bright Spotify green border */
+    width: 600px;
+    text-align: center;
+}
+
+.crud-song h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: #ffffff; /* White text */
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #b3b3b3; /* Light gray for labels */
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828; /* Dark background for inputs */
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffffff; /* White text for inputs */
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Roboto font for input fields */
+}
+
+.form-group input:focus {
+    background-color: #1DB954; /* Spotify green on focus */
+    color: #121212;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Roboto', sans-serif; /* Button font consistency */
+}
+
+.btn-primary {
+    background-color: #181818;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover scale effect */
+}
+
+.btn-secondary {
+    background-color: #181818; /* Spotify green */
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e53935; /* Darker red on hover */
+    color: white;
+    transform: scale(1.05); /* Hover scale effect */
+}
+
+.crud-song form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.crud-song input[type='number'] {
+    -moz-appearance: textfield; /* Remove arrows from number input */
+}
+
+.crud-song input[type='number']::-webkit-outer-spin-button,
+.crud-song input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove number input arrows in Webkit */
+}
+
+/* Style for the dropdown (select) in the EditSong form */
+.spotify-select {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828; /* Dark background */
+    border: none;
+    border-radius: 50px; /* Rounded edges like other inputs */
+    color: #ffffff; /* White text */
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    appearance: none; /* Remove default dropdown arrow for custom styling */
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.spotify-select option {
+    background-color: #282828; /* Dropdown options background */
+    color: #ffffff; /* Dropdown options text color */
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Focus state for the dropdown */
+.spotify-select:focus {
+    background-color: #1DB954; /* Spotify green on focus */
+    color: #121212; /* Darker text when focused */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Hover state for the dropdown */
+.spotify-select:hover {
+    background-color: #1ed760; /* Lighter Spotify green on hover */
+}
+
+/* Remove arrow in select input */
+.spotify-select::-ms-expand {
+    display: none; /* For Internet Explorer and Edge */
+}
+
+.spotify-select::after {
+    content: '\25BC'; /* Down arrow character */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b3b3b3;
+    pointer-events: none;
+}
+
+/* Container for the label and select dropdown */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Style for genre buttons */
+.genre-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+
+.genre-buttons button.selected {
+    background-color: #1DB954;
+}
+
+.genre-buttons button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Green rounded border similar to the login page */
+.bordered {
+    border: 3px solid #1DB954; /* Spotify green border */
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

@@ -1,0 +1,312 @@
+/* Spotify-inspired styling */
+.song-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background like Spotify */
+}
+
+.song-list-box{
+    background-color: #181818; /* Slightly lighter dark box for contrast */
+    padding: 40px;
+    border-radius: 30px; /* Rounded corners for the login box */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    border: 5px solid #1DB954; /* Bright Spotify green border */
+    width: 1400px;
+    text-align: center;
+}
+
+.song-list h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #ffffff; /* White text */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 70px 0 70px 0;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #181818; /* Slightly lighter dark background */
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.song-list li:hover {
+    background-color: #282828; /* Darker hover effect */
+    transform: scale(1.02);
+}
+
+.song-info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.song-list h2 {
+    margin: 0 0 5px;
+    font-size: 1.5em;
+    color: #ffffff; /* White text for song name */
+}
+
+.song-list p {
+    margin: 10px 0 10px 0;
+    color: #b3b3b3; /* Gray text for details */
+    font-size: 1em;
+}
+
+.song-list p strong {
+    color: #1DB954; /* Spotify Green for emphasis */
+}
+
+.song-list p:first-of-type {
+    margin-top: 10px;
+}
+
+/* Add some animations for hover effects */
+.song-list li:hover h2 {
+    color: #1DB954; /* Change song name color on hover */
+}
+
+.song-list li:hover p {
+    color: #ffffff; /* Change details text color on hover */
+}
+
+#login-status {
+    color: #1DB954;
+}
+
+#logged-out-status {
+    color: red;
+}
+
+/* Styling add song button */
+.song-list button {
+    background-color: #181818;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    margin: 10px 0; /* Some margin */
+}
+
+.song-list button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    color: white;
+}
+
+.confirmation-message {
+    background-color: #1DB954;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.song-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Styling search bar */
+/* Center the search bar container */
+.search-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin-top: 20px; /* Optional: Adds some spacing from the top */
+    margin-bottom: 20px;
+}
+
+/* Spotify-inspired search bar style */
+.spotify-search-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    background-color: #282828; /* Dark background like Spotify */
+    border: none;
+    border-radius: 50px; /* Rounded edges for Spotify-style search bar */
+    color: #ffffff; /* White text */
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-indent: 10px; /* Space between text and left edge */
+}
+
+.spotify-search-bar::placeholder {
+    color: #b3b3b3; /* Light gray for placeholder text */
+    font-weight: 400;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.spotify-search-bar:focus {
+    background-color: #1DB954; /* Spotify green when focused */
+    color: #121212; /* Dark text when active */
+    outline: none; /* Remove default focus outline */
+}
+
+.spotify-search-bar:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+}
+
+/* Change placeholder text to black when search bar is hovered */
+.spotify-search-bar:hover::placeholder {
+    color: #000000; /* Black placeholder text on hover */
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Spotify-inspired search button */
+.spotify-search-button {
+    padding: 12px 24px;
+    background-color: #1DB954; /* Spotify green */
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-search-button:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    transform: scale(1.05); /* Subtle hover scale effect */
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-text {
+    align-self: center;
+}
+
+/* Music player */
+
+/* Spotify-inspired music player at the bottom of the screen */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width across the screen */
+    background-color: #181818; /* Dark Spotify-like background */
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Shadow to lift it off the page */
+    z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+/* Center content within the player */
+.music-player-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto;
+    width: 100%;
+    color: #ffffff;
+}
+
+/* Styling the song title */
+.music-player h2 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Audio player element styling */
+audio {
+    width: 800px; /* Adjust the size of the audio player */
+    border-radius: 50px;
+    background-color: #282828;
+    outline: none;
+}
+
+
+.genre-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #181818;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.genre-buttons button.selected {
+    background-color: #1DB954;
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.music-player {
+    margin-top: 20px;
+}
+
+.pagination-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logged-status{
+    display: flex;
+    align-items: center;
+}

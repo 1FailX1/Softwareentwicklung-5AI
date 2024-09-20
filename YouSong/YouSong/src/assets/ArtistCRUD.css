@@ -1,0 +1,88 @@
+.crud-artist {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #181818; /* Dark background */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    border: 5px solid #1DB954; /* Spotify green border */
+    text-align: center;
+    color: #fff; /* White text for dark background */
+    font-family: 'Roboto', sans-serif;
+}
+
+.crud-artist h1 {
+    color: #ffffff; /* White heading */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #b3b3b3; /* Light gray for labels */
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.spotify-input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    border-radius: 50px; /* Rounded input fields */
+    background-color: #282828; /* Dark input background */
+    color: #ffffff; /* White text inside inputs */
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for inputs */
+}
+
+.spotify-input:focus {
+    background-color: #333333; /* Slightly lighter when focused */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: #181818;
+    color: #1DB954;
+    font-weight: bold;
+    border: 3px solid #1DB954;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+    color: white;
+    transform: scale(1.05); /* Subtle hover scale effect */
+}
+
+.btn-secondary {
+    background-color: #181818; /* Spotify green */
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e53935; /* Darker red on hover */
+    color: white;
+    transform: scale(1.05); /* Hover scale effect */
+}
