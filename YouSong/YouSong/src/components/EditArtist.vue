@@ -1,38 +1,40 @@
 <template>
   <div class="crud-artist">
-    <h1>Add New Artist</h1>
-    <form @submit.prevent="submitForm">
-      <div class="form-group">
-        <label for="name">Artist Name:</label>
-        <input type="text" v-model="artist.name" id="name" class="spotify-input" />
-        <span v-for="error in v$.name.$errors" :key="error.$uid" style="color: red"> {{ error.$message }}</span>
-        <p v-if="errors.name" class="error-message">{{ errors.name }}</p>
-      </div>
-      <div class="button-group">
-        <button type="submit" class="spotify-button btn-primary">Save</button>
-        <button type="button" class="spotify-button btn-secondary" @click="goBack">Go Back</button>
-      </div>
-    </form>
+    <div class="crud-artist-box">
+      <h1>Add New Artist</h1>
+      <form @submit.prevent="submitForm">
+        <div class="form-group">
+          <label for="name">Artist Name:</label>
+          <input type="text" v-model="artist.name" id="name" class="spotify-input"/>
+          <span v-for="error in v$.name.$errors" :key="error.$uid" style="color: red"> {{ error.$message }}</span>
+          <p v-if="errors.name" class="error-message">{{ errors.name }}</p>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="spotify-button btn-primary">Save</button>
+          <button type="button" class="spotify-button btn-secondary" @click="goBack">Go Back</button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
+import {ref, onMounted} from 'vue';
+import {useRouter, useRoute} from 'vue-router';
 import axios from 'axios';
 import useVuelidate from '@vuelidate/core';
-import { required } from '@vuelidate/validators';
+import {required} from '@vuelidate/validators';
 
 export default {
   setup() {
     const router = useRouter();
     const route = useRoute();
-    const artist = ref({ name: '' });
+    const artist = ref({name: ''});
     const errors = ref({
       name: ''
     });
     const rules = {
-      name: { required },
+      name: {required},
     };
 
     const v$ = useVuelidate(rules, artist);
