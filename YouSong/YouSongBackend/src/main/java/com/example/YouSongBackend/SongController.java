@@ -25,7 +25,7 @@ public class SongController {
 
     @PostMapping
     public ResponseEntity<Song> createSong(@Valid @RequestBody Song song) {
-        System.out.println(song.toString());
+        //System.out.println(song.toString());
         Song createdSong = songService.createSong(song);
         return ResponseEntity.ok(createdSong);
     }
@@ -34,7 +34,7 @@ public class SongController {
     public ResponseEntity<List<Song>> getAllSongs() {
         List<Song> songs = songService.getAllSongs();
         for (Song song : songs) {
-            System.out.println(song.toString());
+            //System.out.println(song.toString());
         }
         return ResponseEntity.ok(songs);
     }

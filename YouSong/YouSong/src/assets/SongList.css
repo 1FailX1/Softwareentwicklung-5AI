@@ -33,7 +33,7 @@
 .song-list ul {
     list-style-type: none;
     padding: 0;
-    margin: 70px 0 70px 0;
+    margin: 0;
 }
 
 .song-list li {
@@ -41,7 +41,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 15px;
     background-color: #181818; /* Slightly lighter dark background */
     border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;

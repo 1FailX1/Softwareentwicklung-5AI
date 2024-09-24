@@ -1,7 +1,7 @@
 <template>
   <div class="song-list">
     <div class="song-list-box">
-      <h1>Song List</h1>
+      <h1 style="margin: 0">Song List</h1>
       <div class="search-container">
         <input
             type="text"
